@@ -48,7 +48,7 @@ class Person {
     }
 }
 
-class TestTree {
+    class TestTree {
     public static void main(String[] args) {
         Person lily = new Person("Lily");
         lily.spouse(new Person("Wilhelm"));
