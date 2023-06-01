@@ -1,0 +1,21 @@
+db.Posts.insertMany([
+  {
+    post_id: "unique_post_id_1",
+    title: "Title 1",
+    content: "Content 1",
+    author: "Author 1",
+    date: new Date()
+  }
+]
+)
+
+db.Comments.insertMany([
+  {
+    comment_id: "unique_comment_id_1",
+    post_id: "unique_post_id_1",
+    content: "Comment 1",
+    author: "Author 1",
+    date: new Date()
+}
+]
+)
