@@ -1,4 +1,4 @@
-package Gondola;
+package desafio2;
 
 class Child extends Person {
     private int age;

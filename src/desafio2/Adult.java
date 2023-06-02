@@ -1,4 +1,4 @@
-package Gondola;
+package desafio2;
 
 class Adult extends Person {
     public Adult(String name, int age) {

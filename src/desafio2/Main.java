@@ -1,4 +1,4 @@
-package Gondola;
+package desafio2;
 
 
 public class Main {

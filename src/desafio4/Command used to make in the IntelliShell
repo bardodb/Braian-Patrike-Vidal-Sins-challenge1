@@ -1,0 +1,18 @@
+db.getSiblingDB("test1").createCollection("Posts")
+db.getSiblingDB("test1").Posts.createIndex({ "post_id": 1 }) // Index the "post_id" field
+db.getSiblingDB("test1").Posts.insertOne({
+  "post_id": "post1",
+  "title": "First Blog Post",
+  "content": "In my opinion, this isn't legal because...",
+  "author": "User main",
+  "date": new Date()
+})
+db.getSiblingDB("test1").createCollection("Comments")
+db.getSiblingDB("test1").Comments.createIndex({ "post_id": 1 }) // Index the "post_id" field
+db.getSiblingDB("test1").Comments.insertOne({
+  "comment_id": "comment1",
+  "post_id": "post1", // Foreign key referencing "post_id" in "Posts" collection
+  "content": "Great post!",
+  "author": "User chat",
+  "date": new Date()
+})
