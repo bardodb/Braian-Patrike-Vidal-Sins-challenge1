@@ -2,7 +2,7 @@ package Person;
 
 import java.util.ArrayList;
 import java.util.List;
-class Person {
+class   Person {
     private String name;
     private Person spouse = null;
     private List<Person> children;

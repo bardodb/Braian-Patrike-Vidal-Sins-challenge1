@@ -10,6 +10,10 @@ class Gondola {
         this.passenger = passenger;
     }
 
+    public Person getPassenger() {
+        return passenger;
+    }
+
     public String toString() {
         return isEmpty() ? "(empty)" : passenger.toString();
     }

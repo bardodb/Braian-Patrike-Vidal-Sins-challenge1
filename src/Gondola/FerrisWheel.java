@@ -27,22 +27,23 @@ class FerrisWheel {
             if (passengers.length == 1) {
                 gondola.setPassenger(passengers[0]);
             } else {
-                if (passengers.length == 2 && passengers[0] instanceof Child) {
-                    Child child = (Child) passengers[0];
+                if (passengers.length == 2 && passengers[0] instanceof Child child) {
                     Adult father = child.getFather();
-                    if (father != null && father.equals(passengers[1])) {
+                    if (father != null == father.equals(passengers[1])) {
                         gondola.setPassenger(passengers[0]);
                         gondola.setPassenger(passengers[1]);
+
                     } else {
                         System.out.println("ERROR: " + child.name +" can only ride with the father!");
                     }
                 } else {
-                    System.out.println("ERROR: Invalid combination of passengers!");
+                    System.out.println("ERROR: Invalid number of passengers!");
                 }
             }
         } else {
             System.out.println("ERROR: Invalid gondola number!");
         }
+
         if (passengers.length > 0 && passengers[0] instanceof Child) {
             Child child = (Child) passengers[0];
             if (child.getAge() < 12 && child.getFather() == null) {
@@ -58,6 +59,11 @@ class FerrisWheel {
         System.out.println("------- -----------------------");
         for (int i = 0; i < gondolas.size(); i++) {
             System.out.printf("%d %s%n", i + 1, gondolas.get(i));
+        }
+        if (gondolas.stream().allMatch(Gondola::isEmpty)) {
+            System.out.println("The ferris wheel is empty, let's go home, guys!");
+        } else {
+            System.out.println("The ferris wheel is not empty don't off the lights!");
         }
     }
 }

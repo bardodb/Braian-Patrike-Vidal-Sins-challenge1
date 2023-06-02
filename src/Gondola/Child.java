@@ -22,4 +22,20 @@ class Child extends Person {
     public int getAge() {
         return age;
     }
+
+    @Override
+    public String toString() {
+        if (father != null) {
+            return getName() + " and " + father.getName();
+        }
+        if (age >=   12 && father == null){
+            return "only " + getName();
+        }
+        else {
+            return getName();
+        }
+    }
+
 }
+
+
