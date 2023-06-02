@@ -1,0 +1,27 @@
+:
+{
+  "_id": {
+    "$oid": "647a369da437cb40c7c6cec3"
+  },
+  "post_id": "post1",
+  "title": "First Blog Post",
+  "content": "In my opinion, this isn't legal because...",
+  "author": "Chat Main",
+  "date": {
+    "$date": "2023-06-02T18:36:13.905Z"
+  }
+}
+
+{
+  "_id": {
+    "$oid": "647a369da437cb40c7c6cec4"
+  },
+  "comment_id": "comment1",
+  "post_id": "post1",
+  "content": "Great post!",
+  "author": "User chat",
+  "date": {
+    "$date": "2023-06-02T18:36:13.918Z"
+  }
+}
+

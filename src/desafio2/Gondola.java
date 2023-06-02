@@ -1,4 +1,4 @@
-package Gondola;
+package desafio2;
 class Gondola {
     private Person passenger;
 
